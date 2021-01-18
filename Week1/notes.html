@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Week 1 Notes<title>
    
@@ -14,16 +14,19 @@
         step by step, but noticed that nothing was happening when I clicked the button. 
         It has been a while since I have coded in javaScript, but I knew something wasn't right. 
         The example has the javaScript function like this:
+        <code>
         function showCongratulations(theButtonClicked) {
             document.getElementById("result_display").innerHTML = Congratulations, you did it"
 
         }
+    </code>
         Then, has the button tag further down: 
-        <button>Click Me</button>
+       <code> <button>Click Me</button>
         <section id="result_display"></section>
+        </code>
         The button still wasn't doing anything, so I knew that the function and button weren't communicating.
         I then realized that there was no way the showCongratulations function was actually
-        communicating the button. The only communication it had was to the <section> tag, stating
+        communicating the button. The only communication it had was to the section tag, stating
             where the text was to be displayed, but no actual connection to the button itself. 
             The author used the text the ButtonClicked, but did not have that anywhere else in 
             the code, so therefore, it was essentially referencing something that did not actually exsist!
