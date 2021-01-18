@@ -2,17 +2,32 @@
 <html lang="en">
 <body>
 
-<h1>The p element</h1>
+    <h1>Notes</h1>
+    <h2>Notes from Examples of Doing Stuff With the Web</h2>
+    <p>I was following the examples of implenting javaScript code into a 
+        button. And I noticed the example was wrong. I followed the example word for word, from pages 18-21,
+        step by step, but noticed that nothing was happening when I clicked the button. 
+        It has been a while since I have coded in javaScript, but I knew something wasn't right. 
+        The example has the javaScript function like this:
+        
+        function showCongratulations(theButtonClicked) {
+            document.getElementById("result_display").innerHTML = Congratulations, you did it"
 
-<p>This is a paragraph.dkfjdklfjkwdjaf
-jdklfjkdwjfldwj
-jfkldajflkdjflkwa
-jkdljflkdwjaf
-jkldjflkdjaklfj
-jfkdljflkadjfkldwaj
-jdklafjlkdw</p>
-<p>This is a paragraph.</p>
+        }
+    
+        Then, has the button tag further down: 
+        Click Me
+        section "result_display" section
+        
+        The button still wasn't doing anything, so I knew that the function and button weren't communicating.
+        I then realized that there was no way the showCongratulations function was actually
+        communicating the button. The only communication it had was to the section tag, stating
+            where the text was to be displayed, but no actual connection to the button itself. 
+            The author used the text the ButtonClicked, but did not have that anywhere else in 
+            the code, so therefore, it was essentially referencing something that did not actually exsist!
+            I changed theButtonClicked to button (referencing the button tag), and bam! It worked! 
+    </p>
 <p>This is a paragraph.</p>
 
 </body>
-</html>
+</html><!DOCTYPE html>
