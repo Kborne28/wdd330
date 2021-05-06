@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <h1>Week 02 Notes</h1>
+    <h2>Notes from reading JavaScript: Novice to Ninja, Chapter 2, 3 & 4</h2>
+    <p> I think it's interesting that chapter 2 opens up about how important commenting is, and I couldn't agree more. 
+        When you look at well commented code, everything can make sense a whole lot quicker when there are comments. 
+        I prefer to comment with the multi-line comment. 
+        
+        It's really bizzare to me that you don't have to insert a semicolin at the end of each line, that JavaScript uses
+        ASI (Automatic Semicolin insertion) 
+
+        If a data type is not a String, symbol, number, bool, undefined or null, it is considered an object. 
+
+        An operator applies an operation to a value, which is known as the operand:
+        example: typeof 'hello' = The operator is typeof, and the string 'hello' is the operand  
+   
+        A binary operator would require two operand because it is dealing with numbers.
+        3 + 5
+        The operator is the + symbol, and the numbers are the operands. 
+        What is a variable? Variables are used in programming langues to refer to a value 
+        stored in the memory using the variable.
+         In Javascript, it uses const and let to declare variables. Const is used when the variablewill not be 
+         reassigned to another value, meaning it won't change, it will remain constant. 
+         let is used if the variable may be reassigned later throughout the program.
+        Use the = operator to assign a value to the variable.
+                Example: const name = 'Alexa'; //This won't be assigned to any other String
+                Example: let score = 0; //This value will probably change during the program
+        However, it's important to note, that if we assign a non-primitive data type, such as 
+        an array or object within a function, declaring it with const doesn't make it constant. 
+        If you reassign it, it will change. 
+        Example 
+                const name: = {value: 'Alexa'}; //an object  
+                name value = 'Siri'; //changing the value of name
+                >> Siri 
+        
+        Scope: Local & Global
+        Local = inside the block.
+        Global = outside the block
+            Example: const a = 1;
+            {const a = 3; a;}
+            << 3
+            Checking the value outside of the block:
+            a; 
+            << 1
+            using const or let makes it a local variable. Not using those makes it a global variable.
+            aka block Scope
+
+       
+        String properties and methods:
+        properties are accessed using dot notation: 
+        example: 
+            const name = 'Alexa';
+            << Alexa
+            name.length;
+            << 5
+        string methods are accessed also by dot notation:
+        methods are an action that a primitive data type or object can perform. 
+        Example: 
+            name.toUpperCase();
+            << 'ALEXA'
+
+            name.toLowerCase();
+            << 'alexa'
+             Use the charAt method to find where position a character is at:
+             name.charAt(1);
+             << 'l'
+
+             indexOf('A');
+             << 0
+
+        
+
+    
+
+   
+   
+   
+    </p>
+
+
+</body>
+</html>
