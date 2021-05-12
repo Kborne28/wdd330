@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h1>Week 03 Notes</h1>
+<h2>Reading from JavaScript: Novice to Ninja, Chapters 4, 5, & 6</h2> 
+
+<body>
+
+<p>I understand the concept of objects within methods, but still 
+    struggle with it from time to time. 
+
+    Example: 
+    let user = {
+        name: "John"
+        age: 30
+    };
+     user.sayHi = function() {
+         alert("Hello!")
+     };
+     user.sayHi(); //Hello! 
+
+
+</p>
+
+<p>
+    What is this? (the keyword)
+    This is a keyword whose value changes depeding on how a function gets called.
+    There are six different ways this can take on new values:
+    1. this in global context
+    2. this in object construction
+    3. this in an object method
+    4. this in a simple function
+    5. this in an arrow function
+    6. this in an event listener
+
+
+    example of this in object construction:
+    function Human (age) {
+        this.age = age;
+    }
+    let greg = new Human(22)
+    let thomas = new Human(24)
+
+    console.log(greg) //this.age 22
+    console.log(thomas) //this.age 24
+</p>
+
+
+
+<p>
+how to create an object literal:
+const spiderman = {}; OR
+const spiderman = new Object();
+
+How to create new object by defining properties and values:
+var objectName = {property1 : value1, 
+                  property2 : value2,
+                  //...
+                  propertyN : valueN}
+
+var student = { name : "Katie Borne"
+                grade : "Senior"
+                age : 28
+}
+or another way is to use a constructor function:
+function student(name, grade, age)
+{
+    this.name = name; 
+    this.grade = grade;
+    this.age = age;
+}
+
+//create an object called studenta:
+studenta = new student("Lucy", "Pre-K", 3);
+studentb = new student("Oliver", "Pre-K", 2);
+</p>
+
+<p>
+    In JavaScript objects' methods run "inside" that object. 
+    A method is a function associated with an object. They keys of objects are called properties
+    which are containers for primitive values and other objects. 
+    In case, when properties contain functions as their values, they are calledmethods. 
+    Methods are defined the way normal functions are defined, except
+    that they have to be assigned as the property of an object. 
+Example:
+    var myObj = {
+        methodName: MyFunction(parameters)
+        {
+            statements
+        }
+    };
+    myObj = name of an object  
+    methodName = name of the method 
+    Myfunction = name of the function 
+    
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
