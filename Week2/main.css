@@ -1,0 +1,24 @@
+main {
+    background-image: url("https://cdn2.hubspot.net/hubfs/53/google-quiz.jpg");
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    background-image: url("https://media.istockphoto.com/vectors/vector-superhero-transformation-banner-vector-id1054972532?b=1&k=6&m=1054972532&s=170667a&w=0&h=WbOpe3vVZ-Ab0Xmm1uFbnfZjMkKCm8OhysmuIfwEjx4=");
+
+}
+
+h1 {
+      font-family: Marvel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;
+         line-height: 26.4px; 
+}
+
+.quiz-body {
+    background: rgba(255,255,255,1);
+    margin: 150px 33%;
+    padding: 10px 20px 50px 20px;
+    border: 1px solid;
+    box-shadow: 4px 4px 11px 3px
+    rgba(0,0,0,3);
+
+}
