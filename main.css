@@ -7,6 +7,7 @@
     color: white;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: none;
 
 }
 ul {
@@ -15,13 +16,12 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: lightgray;
-    float: left;
-    border-right:1px solid #bbb;
+    max-width: none;
 }
 
 li {
     float: left;
-    border-right: 1px solid #bbb;
+  
 
 }
 
@@ -31,6 +31,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+   
 }
 
 li a:hover  {
