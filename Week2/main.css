@@ -34,7 +34,7 @@ h1 {
     max-width: none;
 
 }
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,13 +43,13 @@ ul {
     max-width: none;
 }
 
-li {
+nav ul li {
     float: left;
   
 
 }
 
-li a {
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -58,6 +58,6 @@ li a {
    
 }
 
-li a:hover  {
+nav ul li a:hover  {
     background-color: #111;
 }
