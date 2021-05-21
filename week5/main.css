@@ -37,3 +37,41 @@ nav ul li a {
 nav ul li a:hover  {
     background-color: #111;
 }
+.note1 {
+    background-color: #f0f7fb;
+        background-image: url(../Images/icons/Pencil-48.png);
+        background-position: 9px 0px;
+        background-repeat: no-repeat;
+        border-left: solid 4px #3498db;
+        line-height: 18px;
+        overflow: hidden;
+        padding: 15px 60px;
+   }
+   
+   .note2 {
+      background-color: red;
+        background-image: url(../Images/icons/Pencil-48.png);
+        background-position: 9px 0px;
+        background-repeat: no-repeat;
+        border-left: solid 4px #3498db;
+        line-height: 18px;
+        overflow: hidden;
+        padding: 15px 60px;
+   }
+   
+   .note3 {
+     background-color: #f0f7fb;
+        background-image: url(../Images/icons/Pencil-48.png);
+        background-position: 9px 0px;
+        background-repeat: no-repeat;
+        border-left: solid 4px #3498db;
+        line-height: 18px;
+        overflow: hidden;
+        padding: 15px 60px;
+     
+   }
+   
+   .note4 {
+      background-color: #ffffcc;
+     border-left: 6px solid #ffeb3b;
+   }
