@@ -8,14 +8,14 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="main.css">
            
-            <title>Week 1 Notes</title>
+            <title>Week 5 Notes</title>
          
          
          </head>
 
       
             <header>
-               <nav>
+              <nav>
                   <ul>
                      <li><a href="../week1/index.html">Week 1</a></li>
                      <li><a href="../week2/index.html">Week 2</a></li>
@@ -28,27 +28,32 @@
             </header>
          
     <h1>Week 5 Notes</h1>
+  
     <h2>Notes from JavaScript: Novice to Ninja: Chapter 10</h2>
     
     <body> 
-    <p>There are three types of Errors: 
+      <div class = "note1">
+    <p>There are three types of Errors: <br><br>
         1. System error - usually caused by the system it is being operated on or a device 
-        connected to it.
-        2. Prorammer error - usually a syntax error or logic that is faulty. 
+        connected to it.<br>
+        2. Prorammer error - usually a syntax error or logic that is faulty. <br>
         3. User error - the user has entered incorrect data that the program is not built to 
-        process or understand.
+        process or understand.<br><br>
         
-        Exceptions:
+        Exceptions:<br>
         The point of an exception is to produce a return value that lets the user or programmer know
         that whatever it is that they are trying to "call" or activate does not exist within 
-        the program. 
+        the program. <br><br>
         
         Mythical unicorn function exception example:
-        unicorn();
+        unicorn();<br>
         //ReferenceError: unicorn is not defined 
         
     
     </p>
+      </div>
+      <br> <br>
+      <div class = "note2">
     <h3>Testing and Debugging</h3>
 
 <p>
@@ -66,9 +71,57 @@
 
     
 </p>
+      </div>
+      
+      
+      <div class = "note3">
 <p> 
     Linting tools are another great tool to test the quality of your JavaScript code beyond using just
     strict mode. They highlight sloppy programming practices and syntax errors. 
 </p>
+<h5>Alerts</h5>
+<p>
+    The alert method shows a dialog box to let the user know that they cannot access whatever portion of the code,
+    or that their input is incorrect. <br>
+    Example:
+    
+    function amIOldEnough(age){ <br>
+    if(age = 12)<br>
+      alert(age);<br>
+      return 'No, Sorry.';<br>
+   } else if(age > 18) {<br>
+      return 'Only if you are accompanied by an adult.';<br>
+ 
+  } <br>
+    else { <br>
+      return 'Yep, come on in!';<br>
+  } <br>
+  
+  }<br>
+  <br><br>
+
+</p>
+      </div>
+      <p>
+      <div class ="note2">
+     
+      <h3> Throwing Exceptions</h3>
+      <p>
+        Throwing exceptions is down by the programmer and embedded within the code. <br>
+        Example: <br>
+       function squareRoot(number) <br>
+        'use strict'<br>
+         if(number < 0){ <br>
+            throw new RangeError('You can't find the square root of a negative number ); <br>
+            } <br>
+         return Math.sqrt(number); <br>
+        }; <br>
+        
+      <br> <br>
+      <h3>try, catch, and finally</h3>
+      
+      </p>
+      
+</div>    
 </body>
 </html>
