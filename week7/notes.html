@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="main.css">
+           
+            <title>Week 7 Notes</title>
+         
+         
+         </head>
+
+      
+            <header>
+              <nav>
+                  <ul>
+                     <li><a href="../week1/index.html">Week 1</a></li>
+                     <li><a href="../week2/index.html">Week 2</a></li>
+                     <li><a href="../week3/index.html">Week 3</a></li>
+                     <li><a href="../week4/index.html">Week 4</a></li>
+                     <li><a href="../week5/index.html">Week 5</a></li>
+                     <li><a href="../week6/index.html">Week 6</a></li>
+                     <li><a href="../week7/index.html">Week 7</a></li>
+
+                  </ul>
+              </nav>
+            </header>
+         
+    <h1>Week 7 Notes</h1>
+  
+    <h2>Notes from JavaScript: Novice to Ninja: Chapter 13: Ajax</h2>
+    
+    <body> 
+      <div class = "note1">
+    <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically<br>
+       updates webpages without having to reload. This enables data to be sent and received in the background, as well as <br>
+       portions of a page to be updated in response to user events, while the rest of the program continues to run.<br>
+        
+    
+    </p>
+      </div>
+      <br> <br>
+      <div class = "note2">
+    <h3>Clients and Servers</h3>
+
+<p>
+    The internet is seperated into two parts: Clients and Servers. <br> 
+    Clients requests a web page from a server, and the server processes and sends that request.<br>
+
+    JavaScript was designed to be a client-side scripting language, meaning that it rans locally<br>
+    in the browser (the client side/part), adding dynamic features to the web page that was returned from the server.<br>
+    Ajax allows JavaScript to request resources from a server on behalf of the client. <br>
+    It is usually requested using JSON data or html.<br>
+
+    In order to use Ajax, a server-side language is required to do so. Languages such as:<br>
+    PHP<br>
+    Ruby<br>
+    Node.js<br>
+    .NET<br>
+
+
+
+    
+</p>
+      </div>
+      
+      
+      <div class = "note3">
+
+<h5>What is Cross-Origin Resource Sharing?</h5>
+<p>
+    Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server <br>
+    to locate any other origins (domain, scheme, or port) than its own from which a browser should permit <br>
+    loading of resources. CORS also relies on "preflight" requests used by browsers to see if the server<br>
+    will host the cross-origin request. In that request, the browser sends headers that indicate <br>
+    the HTTP method and headers that will be used in the actual request.<br> 
+    
+    <br>
+    What requests use CORS? <br>
+    Invocations of the XMLHttpRequest or API's<br>
+    Web Fonts(for cross-domain font usage in @font-face within CSS)so that servers can deploy <br>
+    TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.<br>
+    WebGL Textures<br>
+    CSS Shapes from images<br>
+
+
+</p>
+      </div>
+
+
+      <p>
+      <div class ="note2">
+     
+      <h3>The Fetch API</h3>
+      <p>
+       Fetch API is the current living standard for requesting and sending data asynchronously across a network.<br>
+       It streamlines a number of concepts that had become cumbersome when using the XMLHttpRequest object.<br>
+
+       How does it work?<br><br>
+       The Fetch API proveides a global fetch() method that only has one mandartory argument, which is to<br>
+       fetch the resource that was requested. Here's an example:<br><br>
+
+       fetch('https://example.com/data')<br>
+       .then(//code that handles the response)
+       .catch(//code that runs if the server returns an error)<br><br>
+
+       The fetch() returns a promise that resolves to the response from the URL that was provided as an argument. The .then handles<br>
+       handles that response, and the .catch statement helps deal with any errors that may occur.<br>
+
+      
+      </p>
+      
+</div>    
+
+<div class="note3">
+    <p>
+        <h3>The Reponse</h3>
+        The Reponse interface deals with the object that's returned when the promise is fulfilled.<br>
+        Example:<br><br>
+        const url = 'https:example.com/data';
+
+        fetch(url)
+        .then((response) => {
+            if(response.ok) {
+                return response;
+            }
+            throw Error(reponse.statusText);
+        })
+        .then(response => // do something with response)
+        .catch(error => console.log('There was an error!'))
+  
+  
+        <h4>Headers Interface</h4>
+        HTTP Headers are used to pass on any additional info about a request or response.<br>
+        The Fetch API introduced a Headers interface, which can be used to create a headers object.<br>
+        A Headers object has the following properties:<br>
+        has(): Can be used to check if the headers object contains the header provided as an argument.<br><br>
+                headers.has('Content-Type');<br>
+                true; <br>
+        get(): Returns the value of the header provided as an argument <br>
+                headers.get('Content-Type');<br>
+                'text/plain';<br>
+        set(): Can be used to set a value of an already existing header, or create a new header<br>
+        with the value provided as an argument if it does not already exist.<br><br>
+                headers.set('Content-Type', 'application/json');<br>
+
+        delete(): Removes the header provided as an argument.<br>
+                headers.delete('Accept-Encoding');<br><br><br>
+
+
+  
+  
+    </p>
+</div>
+
+<button id ='number'>Number Facts</button>
+<button id='chuck'>Chuck Norris Fact</button>
+<div id='output'>
+    Ajax Response will go here
+</div>
+<script src='main.js'></script>
+
+</body>
+</html>
