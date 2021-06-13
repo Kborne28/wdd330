@@ -6,14 +6,14 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" type="text/css" href="starwars.css">
            
-            <title>Week 8 Code Examples</title>
+            <title>Star Wars API Exercise</title>
          
          
          </head>
 
-         <body>
+         
             <header>
                <nav>
                   <ul>
@@ -28,17 +28,65 @@
                   </ul>
               </nav>
             </header>
-         </body>
          
          
          
          
+         <body> 
+
+
+            
+        
 
          <main>
+            <div class="listbox">
+               <table id="shiplist">
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Length</th>
+                        <th>Crew</th>
+                     </tr>
+                  </thead>
 
-       
+                  <tbody></tbody>
+               </table>
+
+               <a id="prev" href="#">&lt;-Prev</a> <a id="next" href="#">Next -&gt;</a>
+            </div>
+            <div id="detailsbox" class="hidden">
+               <dl>
+                  <dt>Name:</dt>
+                  <dd class="name"></dd>
+                  <dt>Model:</dt>
+                  <dd class="model"></dd>
+                  <dt>Class:</dt>
+                  <dd class="class"></dd>
+                  <dd>Movies:</dd>
+                  <dd class="movies"></dd>
+               </dl>
+            </div>
+
+
+
+         <br> <br>
+         <div class="listbox">
+            <table id="planetlist">
+               <thead>
+                  <tr>
+                     <th>Name:</th>
+                     <th>Population:</th>
+                     <th>Gravity</th>
+                  </tr>
+               </thead>
+
+               <tbody></tbody>
+            </table>
+
+            <a id="prev" href="#">&lt;-Prev</a> <a id="next" href="#">Next -&gt;</a>
+         </div>
         </main>
-
+<script src ="starwars.js"></script>
     
    
 
@@ -47,5 +95,5 @@
     <div class="footer">
         <p style="max-width: none;">&spades; Portfolio |  Katelyn Borne  | Spring 2021 &spades; </p>
   </div>
-  
+</body>
 </html>

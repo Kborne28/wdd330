@@ -1,0 +1,120 @@
+@import url('https://fonts.google.com/css?family=Montserrat');
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#shiplist td {
+    cursor: pointer;
+}
+
+
+#detailsbox {
+    flex-basis: 20%;
+    padding: 2px 4px;
+    background: #333;
+    text-align: right;
+    color: #fff;
+  }
+  
+  #detailsbox dl {
+    border: 1px solid;
+    text-align: left;
+  }
+  
+  #shiplist {
+    /* display: flex; */
+    flex-flow: row wrap;
+    list-style-type: none;
+  }
+  
+  #shiplist thread {
+    background-color: lightgray;
+  }
+  
+  #shiplist tr {
+    border: 1px solid;
+    padding: 0.5em;
+    height: 44px;
+  }
+  #shiplist tr:nth-child(even) {
+    background-color: azure;
+  }
+  #shiplist tr:hover {
+    background-color: bisque;
+    text-decoration: underline;
+  }
+
+  dl {
+      display: flex;
+      flex-flow: row wrap;
+      border: solid #333;
+      border-width: 1px 1px 0 0;
+
+  }
+
+  dt {
+      flex-basis: 20%;
+      padding: 2px 4px;
+      background: #333;
+      text-align: right;
+      color: #fff;
+  }
+
+  dd {
+      flex-basis: 70%;
+      flex-grow: 1;
+      margin: 0;
+      padding: 2px 4px;
+      border-bottom: 1px solid #333;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: none;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    max-width: none;
+}
+
+nav li {
+    float: left;
+  
+
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+nav li a:hover  {
+    background-color: #111;
+}
