@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="main.css">
+            <script defer src="script.js"></script>
+           
+            <title>Week 8 Notes</title>
+         
+         
+         </head>
+
+      
+            <header>
+              <nav>
+                  <ul>
+                     <li><a href="../week1/index.html">Week 1</a></li>
+                     <li><a href="../week2/index.html">Week 2</a></li>
+                     <li><a href="../week3/index.html">Week 3</a></li>
+                     <li><a href="../week4/index.html">Week 4</a></li>
+                     <li><a href="../week5/index.html">Week 5</a></li>
+                     <li><a href="../week6/index.html">Week 6</a></li>
+                     <li><a href="../week7/index.html">Week 7</a></li>
+                     <li><a href="../week8/index.html">Week 8</a></li>
+
+                  </ul>
+              </nav>
+            </header>
+         
+    <h1>Week 8 Notes</h1>
+  
+    <h2>Notes from  HTML5 & CSS3 for the Real World: 2nd Edition</h2>
+    
+    <body> 
+      <div class = "note1">
+    <p> The CSS3 Transform property lets you translate, rotate, scale and/or skew any element<br>
+        on the webpage. We can manuipulate an element's appearance using transform functions. <br>
+
+        Example: 
+        <h2>Transform: Rotate(20 degrees):</h2>
+        <div class ="a">Hello World!</div><br>
+
+        <h2>Transform: SkewY(20 degrees):</h2>
+        <div class="b">Hello World!</div><br>
+
+        <h2>Transform: scaleY(1.5):</h2>
+        <div class="c">Hello World!</div>
+
+        
+    
+    </p>
+      </div>
+      <br> <br>
+      <div class = "note2">
+    <h3>Translate Functions</h3>
+
+
+<p>
+    Translation functions allow you to move elements left, right, up, or down.<br>
+    These functions are simliar to position: relative; <br>
+    When you employ a transition function, you're moving elements without impacting the flow of the document.<br>
+    Unlike the postition: relative function, which allows you to posisition an element either against its current position <br>
+    or against a parent or other ancestor, a translated element can only be moved relative to its current position.<br>
+    transform: translate(45px, -45px); <br>
+    Examples:<br>
+    <div class ="d">
+    This div element is moved 50 pixels to the right, and 100 pixels  down<br>
+    from its current position.</div>
+
+    <div class = "e"> This div element is moved 45 px to the right <br>
+    along the x axis.</div>
+<br>
+    <div class ="f">This div element is moved 30 px along the y axis.</div>
+
+   
+</p>
+      </div>
+      
+      
+      <div class = "note3">
+
+<h5>Transitions</h5>
+<p>
+    Transitions allow the values of CSS properties to change over time, essentially providing simple<br>
+    animations. For example, if a link changes color on hover, you can have it gradually fade from one color<br>
+    to the other transition can be gradual. If the browser lacks support for transitions, the change<br>
+    will be immediate instead of gradual, which is fine accessible.<br>
+
+   The steps to create a simple transition using CSS are as follows:<br>
+   1. Declare the original state of the element in the default style declaration.<br>
+   2. Declare the transition functions in your default style declaration using the transition<br>
+   properties including: transition-property, transition-duration, transition-timing-function,<br>
+   and transition-delay.<br>
+    Example:
+    Hover over the div element below, to see the transition effect:<br>
+    <div class ="g"></div><br>
+
+    The transition-timing-function property:<br>
+    Hover over the div elements below, to see the different speed curves.<br>
+
+    <div id="div6"></div>
+    <div id="div1">liner</div><br>
+    <div id="div2">ease</div><br>
+    <div id="div3">ease-in</div><br>
+    <div id="div4">ease-out</div><br>
+    <div id="div5">ease-in-out</div><br>
+
+</p>
+      </div>
+
+
+      <p>
+      <div class ="note2">
+     
+      <h2>Notes from Chapter 12: Canvas, SVG, and Drag and Drop</h2>
+      <p>
+      With HTML5's Canvas API, we can draw anything we can imagine, all through JavaScript.<br>
+      This can improve the performance of our websites by avoiding the need to download images off <br>
+      the network. With canvas, we can draw shapes and lines, arcs and text, gradients and patterns. In addition, canvas<br>
+      gives us the power to manipulate pixels in images and even video.<br>
+      The HTML canvas element is used to draw graphics on a web page.<br>
+      Example:<br>
+      <canvas id="myCanvas" class="myCanvas" width="200" height ="200">
+          Sorry! Your browser doesn't support Canvas!
+      </canvas>
+      </p>
+      
+</div>    
+
+
+<script src='main.js'></script>
+
+</body>
+</html>
