@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="main.css">
+            <script defer src="main.js"></script>
+           
+            <title>Week 8 Notes</title>
+         
+         
+         </head>
+
+      
+            <header>
+              <nav>
+                  <ul>
+                     <li><a href="../week1/index.html">Week 1</a></li>
+                     <li><a href="../week2/index.html">Week 2</a></li>
+                     <li><a href="../week3/index.html">Week 3</a></li>
+                     <li><a href="../week4/index.html">Week 4</a></li>
+                     <li><a href="../week5/index.html">Week 5</a></li>
+                     <li><a href="../week6/index.html">Week 6</a></li>
+                     <li><a href="../week7/index.html">Week 7</a></li>
+                     <li><a href="../week8/index.html">Week 8</a></li>
+                     <li><a href="../week9/index.html">Week 9</a></li>
+
+                  </ul>
+              </nav>
+            </header>
+         
+    <h1>Week 9 Notes</h1>
+  
+    <h2>Notes from  JavaScript: Novice to Ninja: Chapter 9 & 14 </h2>
+    
+    <body> 
+      <div class = "note1">
+    <p> In a browser environment, the global object is the window object, which represents the browser window<br>
+        that contains a web page. There are several aspects to a browsers environment. <br>
+        The Browser Object Model (BOM)<br>
+        Finding browser information <br>
+        Browser History <br>
+        Controlling windows <br>
+        Cookies <br>
+        Timing functions <br>
+
+        <br>
+        The Browser Object Model <br>
+        <br>
+        The BOM is a collection of properties and methods that contain information about the browser and the computer screen. <br>
+        For example, we can find out which browser is being used to view a page. We can also find out the dimensions of the screen <br>
+        it is viewed on, and which pages have been visited before the current page. It can also be used for the rather dubious practice of creating <br>
+        pop-up windows if you want to annoy your users. All the properties and methods within the BOM are made available <br>
+        by the window object. Every browser window, tab, popup, frame and iframe has a window object.<br>
+        <br>
+        How to find out what browser is being used using the window object: <br>
+        window.navigaor.userAgent 
+        
+        <br><br>
+
+        How to find out location of the URL of the current page: <br>
+        window.location.href  
+        <br>
+        Some other location properties:<br>
+        window.location.protocol : returns a string describing the protocol used (such as http, https, pop2, ftp )<br>
+        <br>
+        window.location.host : returns a string describing the web domain <br>
+        <br>
+        window.location.port : returns a string describing the port number.<br>
+        <br>
+        window.location.pathname : returns a string of the path that follows the domain.<br>
+        <br>
+        window.location.search : returns a string that starts with a '?' followed by a query string parameters. <br>
+        <br>
+        
+    </p>
+      </div>
+      
+      <div class = "note2">
+    <h3>Location Object Method Examples</h3>
+
+
+<p>
+    
+   
+</p>
+     
+      <p>
+          The Assign() method: This assigns the page to a new page<br>
+          <button onclick="assign()">Load New Document</button>
+      
+      <br><br>
+
+        The Reload() Method: This reloads the page <br>
+        <button onclick="reload()">Reload Page</button>
+      
+      <br><br>
+      
+        The Replace() Method: This replaces the current page, similar to the assign method<br>
+        <button onclick="replace()">Replace Page</button>
+        
+      
+        </p>
+    </div>
+      <div class = "note3">
+
+<h5>Location Object Property Examples:</h5>
+<p>
+    Hash property Example: location.hash<br>
+    Click the button to change the anchor part of the URL to #hashexample<br>
+    <button onclick="hashFunction()">Try it!</button>
+<br><br>
+    Location Host Property: location.host<br>
+    <button onclick="hostFunction()" id="host">Try Me!</button>
+    <br><br>
+    Location href Property: location.href<br>
+    <button onclick="linkProperty()" id="link">Try This one!</button>
+    <br><br>
+    Location Host name property: location.hostname<br>
+    <button onclick="hostName()" id="hostname">How Bout This One!</button>
+    <br><br>
+    Location Origin Property: location.origin<br>
+    <button onclick="originFunction()" id="origin">Ok, what about this one?</button>
+
+    <br><br>
+    Location port Property: location.port<br>
+    <button onclick="portFunction()" id="port">Here's Another One!</button>
+
+    <br><br>
+    Location Protocol Property: location.protocol<br>
+    <button onclick="protocolFunction()" id="protocol">This one's cool!</button>
+
+
+</p>
+      </div>
+
+
+      
+      <div class ="note2">
+     
+      <h2>Cookies</h2>
+      <p>
+          What are cookies? Cookies are small files that are saved locally on a user's computer. They were invented by Netscape<br>
+          as a way of getting around HTTP being a stateless protocol. This means that a browser does not remember anything from one request to another.<br>
+          So every time a user visits a page, nothing about any previous visits is remembered. Cookies can be used to sidestep this problem<br>
+          by storing information that can then be retrieved between requests. A restriction of cookies is that they can only be read by a web page from the same <br>
+          domain that set them. This is to stop sites from accessing information about users, such as other sites they have visited. Cookies are also limited<br>
+          to storing up to 4KB of data, although 20 cookies are allowed per domain, which can add up to quite a bit.<br>
+          <br>
+          Cookies are also used to personalize data to enhance their browsing experience, storing the users preferences, keeping track of their choices, (such as shopping)<br>
+          authentication (purchases made, credit card info, name and address) and tracking users.<br>
+          <br>
+           The following are creating/deleting cookie attributes using document objects:<br>
+           <br>
+           Creating a Cookie:<br>
+           document.cookie = "name=Johnny Bravo"; 
+           <br>
+           Creating a cookie, adding an expiration date: <br>
+           document.cookie ="username=Johnny Bravo; expires=Thu, 25 Dec 2021 12:00:00 CST";<br>
+           Creating a cookie, telling the browser what path the cookie belongs to:<br>
+           document.cookie="username=Johnny Bravo; expires =Thu, 25 Dec 2021 12:00:00 CST; <br>
+           path=/"<br>
+           Delete a cookie:<br>
+           document.cookie="username=; expires Wed, 01 Jan 2020 00:00:00 CST; path=/;"<br>
+           Read a cookie:<br>
+           document.cookie;<br>
+
+      </p>
+      
+</div>    
+<div class ="note3">
+    <h2>Timing Functions</h2>
+    <p>
+        The window object provides some useful methods for scheduling the execution of a function, and for repeatedly executing<br>
+        functions at regular intervals.<br>
+        Here are some examples of differing timing functions:<br><br>
+        Timeout Method : window.setTimeout(): <br>
+        Click on the button, and wait 3 seconds and the alert will appear.<br>
+        You can click "Stop the Message" to prevent the alert from appearing.<br>
+        <button onclick="myVar = setTimeout(timeoutFunction, 3000)">Try Me!</button>
+        <button onclick="clearTimeout(myVar)">Stop the Message!</button>
+
+        <br><br>
+        Set Interval Method: windlow.setInterval(): <br>
+        A script on the page starts this clock:<br>
+        <p id="demo"></p>
+
+
+
+    </p>
+
+    </div>
+
+
+
+</body>
+</html>
