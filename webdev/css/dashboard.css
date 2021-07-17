@@ -1,0 +1,145 @@
+*{
+   
+    list-style: none;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+}
+
+/**Sign up form**/ 
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin-top: auto;
+
+    
+    font-family: 'Play', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    
+    
+
+}
+
+.banner {
+    background-color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(82, 67, 67);
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a.active {
+    background-color: red;
+    color: white;
+}
+
+.topnav .search-container {
+    float: right;
+
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+}
+
+.upload_box {
+    background-color:gray;
+    float: left;
+    width: 35%;
+    margin: 30px;
+    height: 400px;
+    text-align: center;
+
+
+}
+.my_uploads {
+    background-color: gray;
+    float: right;
+    margin: 30px;
+    height: 400px;
+    text-align: center;
+    width: 35%;
+    
+}
+
+footer {
+    position:fixed;
+    left: 0px;
+    right: 0px; 
+    bottom: 0px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-family: Avenir Next, sans-serif;
+    text-align: center;
+}
+
+.pagetitle {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    color: gray;
+}

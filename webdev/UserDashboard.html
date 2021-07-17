@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<div lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <script src="js/dashboard.js"></script>
+    <title>WebDev & Friends</title>
+</head>
+<header>         
+
+
+    
+
+       
+
+<WebDev style="color: gray; vertical-align: middle; margin: 5px; font-size: 70px;">WebDev & Friends<br></span>
+    
+       <span style="color: gray; vertical-align: middle; margin: 5px; font-size: 30px;">Where We Learn From Each Other</span> 
+
+
+
+</header>
+
+    <div class="topnav">
+        <a class="active" href="mainpage.html">Home</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search a tutorial" name="search">
+            <button type ="submit">Search</button>
+        </form>
+        </div>
+    </div>
+<body>
+    <div class="pagetitle">User DashBoard</div>
+    <div class="upload_box">        
+<form action ="/action_page.php">
+    Upload A Tutorial
+<br><br><label for="title">Title:</label>
+<input type="text" id="title" name="title"><br><br><br><br>
+<label for="description">Description: </label>
+<input type="text" id="description" name="description"><br>
+</form>
+
+<br><br><br>
+<form method="post" enctype="multipart/form-data">
+  <label for="file">Upload File:</label><br>
+<input type="file" id="file" name="file" multiple>
+<div>
+    <br>
+    <button>Upload</button>
+</div>
+</form>
+</div>
+
+<div class="my_uploads">        
+    <form action ="/action_page.php">
+        My Uploads
+        <br><br>
+        <li>Exampe #1</li><br>
+        <li>Example #2</li><br>
+        <li>Example #3</li><br>
+    
+    </form>
+    
+    <br><br><br>
+
+</body>
+
+
+<footer>
+    &copy2021 WebDev & Friends<br>
+</footer>
+</html>
