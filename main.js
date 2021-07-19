@@ -46,8 +46,7 @@ function showNav(depth) {
             <li><a href='${pathPrefix}webdev/mainpage.html'>Final Project</a></li>
         </ul>
     `
-        
-    document.querySelector('#menuButton').addEventListener('click', toggleMenuVisibility)
+ 
 }
 
 
