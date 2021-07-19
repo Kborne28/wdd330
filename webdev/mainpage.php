@@ -3,7 +3,7 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <script src="js/login.js"></script>
     <title>WebDev & Friends</title>
 </head>
@@ -20,48 +20,34 @@
 
 
 </header>
-
-
-<div class="topnav">
-    <a class="active" href="mainpage.html">Home</a>
-    <div class="search-container">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Search a tutorial" name="search">
-        <button type ="submit">Search</button>
-    </form>
-    </div>
-</div>
-
-
-
 <body>
  <!-- Sign In portion -->
  <p>
      <div class="container" id="container">
          <div class="form-container sign-up-container">
-             <form action="#">
+             <form action="createUser.php" method="post">                   
                  <h1 style="color: gray">Create Account</h1>
                  <input type="text" placeholder="First Name" />
                  <input type="text" placeholder="Last Name" />
                  <input type="email" placeholder="Email" />
-                 <input type="password" placeholder="Password" />
-                 <button type="button" onclick="window.location.href='UserDashboard.php'">Sign Up</button>    
+                 <input type="password" name="password" placeholder="Password" minlength="8"/>
+                 
+                 <button type="button" onclick="window.location.href='createUser.php'">Does this work/button>    
              </form>
          </div>
          <div class="form-container sign-in-container">
              <!--Form action-->
-             <form method="POST" enctype="multipart/form-data">
-                 <h1 style="color: gray;">Upload New Tutorial</h1>
-                 <input type="text" placeholder="Tutorial Title" />
-                 <input type="text" placeholder="Enter a short description" />
-                 <lable for="file">Upload File:</lable><br>
-                 <input type="file" id="file" name="file" multiple>
+             <form>
+                 <h1 style="color: gray;">Sign In</h1>
+                 <input type="email" placeholder="Email" />
+                 <input type="password" placeholder="Password" />
+                 
+                 <button type="button" onclick="window.location.href='dashboard2.php'" class="button">Sign In</button>
              </form>
-           
-            
          </div>
          <!-- Sign Up Portion-->
          <div class="overlay-container">
+                                                       
              <div class="overlay">
                  <div class="overlay-panel overlay-left">
                      <h1>Welcome Back!</h1>
@@ -69,18 +55,14 @@
                      <button class="ghost" id="signIn">Sign In</button>
                  </div>
                  <div class="overlay-panel overlay-right">
-                     <h1>User Uploads</h1>
-                     <ul class ="outside">
-                         <li><a href="#">My Link</a></li>
-                         <li><a href="#">My Link</a></li>
-                         <li><a href="#">My Link</a></li>
-                     </ul><br>
-                     <button class="ghost" id="edit">Edit</button> <br>
-                     <button class="ghost" id="delete">Delete</button>
+                     <h1>Welcome to WebDev!</h1>
+                     <p>Enter your information to create an account</p>
+                     <button type="button" onclick="window.location.href='createUser.php'" class="button">Sign Up</button>
                  </div>
              </div>
          </div>
      </div>
+     
  </p> 
       
 

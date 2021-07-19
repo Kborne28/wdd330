@@ -37,3 +37,162 @@ nav li a {
 nav li a:hover  {
     background-color: #111;
 }
+
+
+
+
+h1 {
+    font-family: Marvel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;
+       line-height: 26.4px; 
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: none;
+
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+  max-width: none;
+}
+
+nav ul li {
+  float: left;
+
+
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+nav ul li a:hover  {
+  background-color: #111;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: none;
+
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+  max-width: none;
+  opacity: 0.5;
+}
+
+.links {
+  float:center;
+}
+nav li {
+  float: left;
+
+
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  opacity: 100;
+ 
+}
+
+nav ul li a:hover  {
+  background-color: #111;
+  color: white;
+}
+
+html {
+  background: url("https://wallpaperaccess.com/full/5651981.jpg") no-repeat center center fixed;
+ background-size: cover;
+ height: 100%;
+ overflow: hidden;
+
+
+}
+
+.clickme {
+  background-color: #EEEEEE;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:5px;
+  cursor:pointer;
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.notes {
+
+  background-color: black;
+  color: white;
+}
+
+.code {
+  background-color: #EEEEEE;
+  color: black;
+
+}
+.code:hover{
+  background-color: black;
+  color: white;
+}
+.notes:hover {
+  background-color: white;
+  color:black;
+}
+
+.note1 {
+  background-color: #f0f7fb;
+      background-image: url(../Images/icons/Pencil-48.png);
+      background-position: 9px 0px;
+      background-repeat: no-repeat;
+      border-left: solid 4px #3498db;
+      line-height: 18px;
+      overflow: hidden;
+      padding: 15px 60px;
+      opacity: 0.8;
+ }
+
+
+ul {
+  text-align: center;
+  list-style-type: none;
+
+  
+}
