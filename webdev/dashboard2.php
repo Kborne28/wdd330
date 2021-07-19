@@ -50,29 +50,15 @@
          </div>
          <div class="form-container sign-in-container">
              <!--Form action-->
-             <form action="dashboard2.php" method="POST" enctype="multipart/form-data">
+             <form action="gallery.php" method="post" enctype="multipart/form-data">
                  <h1 style="color: gray;">Upload New Tutorial</h1>
                  <input type="text" placeholder="Tutorial Title" />
                  <input type="text" placeholder="Enter a short description" />
                  <lable for="file">Upload File:</lable><br>
-                 <input type="file" id="file" name="file" multiple>
-                 <input type="submit" value="upload" name="upload1" />
+                 <input type="file" id="fileToUpload" name="fileToUpload" multiple>
+                 <input type="submit" value="Upload Image" name="submit" />
              </form>
-           <?php
-           if(isset($_POST['upload1']))
-           {
-               $filepath = "webdev/" . $_FILES["file"]["name"];
-
-               if(move_uploaded_file($_FILES["file"]["tmp_name"], $filepath))
-               {
-                echo "<img src=".$filepath." height=200 width=300 />";
-               }
-               else
-               {
-                   echo "Error !!";
-               }
-           }
-           ?>
+         
             
          </div>
          <!-- Sign Up Portion-->
