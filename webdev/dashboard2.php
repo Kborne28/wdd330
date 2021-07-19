@@ -71,20 +71,22 @@
                  </div>
                  <div class="overlay-panel overlay-right">
                      <h1>User Uploads</h1>
-                     <ul class ="outside">
-                         <li><a href="#">My Link</a></li>
-                         <li><a href="#">My Link</a></li>
-                         <li><a href="#">My Link</a></li>
+                     <ul class ="outside" id="list">
+                         <li><a href="#">Intro to php</a></li>
+                         <li><a href="#">JavaScript pt 2</a></li>
+                         <li><a href="#">My guide to CSS</a></li>
                      </ul><br>
-                     <button class="ghost" id="edit">Edit</button> <br>
-                     <button class="ghost" id="delete">Delete</button>
+                     <button class="ghost" onclick="editLI()" id="edit">Edit</button> <br>
+                     <button class="ghost" onclick="deleteLI()" id="delete">Delete</button>
                  </div>
              </div>
          </div>
      </div>
  </p> 
       
-
+<script>
+    var inputText=document.getElementById()
+</script>
         
 
 
