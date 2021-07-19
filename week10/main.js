@@ -65,8 +65,7 @@ function showNav(depth) {
             <li><a href='${pathPrefix}week10'>Week 10</a></li>
             <li><a href='${pathPrefix}week11'>Week 11</a></li>
             <li><a href='${pathPrefix}week12'>Week12</a></li>
+            <li><a href='${pathPrefix}webdev/mainpage.html'>Final Project</a></li>
         </ul>
     `
-        
-    document.querySelector('#menuButton').addEventListener('click', toggleMenuVisibility)
 }

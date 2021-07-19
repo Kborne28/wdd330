@@ -107,7 +107,7 @@ nav ul li a:hover  {
        height: 100px;
        background-color: aqua;
        border: 1px solid black;
-       -ms-transform: translate(50px,100px);
+       
    }
 
    div.e {
