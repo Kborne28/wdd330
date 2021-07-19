@@ -31,18 +31,18 @@ function showNav(depth) {
     `
     <ul id='navigation'>
             
-            <li><a href='${pathPrefix}week1/index.html'>Week 1</a></li>
-            <li><a href='${pathPrefix}week2/index.html'>Week 2</a></li>
-            <li><a href='${pathPrefix}week3/index.html'>Week 3</a></li>
-            <li><a href='${pathPrefix}week4/index.html'>Week 4</a></li>
-            <li><a href='${pathPrefix}week5/index.html'>Week 5</a></li>
-            <li><a href='${pathPrefix}week6/index.html'>Week 6</a></li>
-            <li><a href='${pathPrefix}week7/index.html'>Week 7</a></li>
-            <li><a href='${pathPrefix}week8/index.html'>Week 8</a></li>
-            <li><a href='${pathPrefix}week9/index.html'>Week 9</a></li>
-            <li><a href='${pathPrefix}week10/index.html'>Week 10</a></li>
-            <li><a href='${pathPrefix}week11/index.html'>Week 11</a></li>
-            <li><a href='${pathPrefix}week12/index.html'>Week12</a></li>
+            <li><a href='${pathPrefix}week1'>Week 1</a></li>
+            <li><a href='${pathPrefix}week2'>Week 2</a></li>
+            <li><a href='${pathPrefix}week3'>Week 3</a></li>
+            <li><a href='${pathPrefix}week4'>Week 4</a></li>
+            <li><a href='${pathPrefix}week5'>Week 5</a></li>
+            <li><a href='${pathPrefix}week6'>Week 6</a></li>
+            <li><a href='${pathPrefix}week7'>Week 7</a></li>
+            <li><a href='${pathPrefix}week8'>Week 8</a></li>
+            <li><a href='${pathPrefix}week9'>Week 9</a></li>
+            <li><a href='${pathPrefix}week10'>Week 10</a></li>
+            <li><a href='${pathPrefix}week11'>Week 11</a></li>
+            <li><a href='${pathPrefix}week12'>Week12</a></li>
             <li><a href='${pathPrefix}webdev/mainpage.html'>Final Project</a></li>
         </ul>
     `
